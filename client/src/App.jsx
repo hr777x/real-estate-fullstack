@@ -2,8 +2,9 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Layout from './routes/layout/layout'
 import HomePage from './routes/homePage/homePage'
-import ListPage from './routes/listPage/listPage'
-import SinglePage from './routes/singlePage/singlePage'
+import ListPage from './routes/listPage/ListPage'
+import SinglePage from './routes/singlePage/SinglePage'
+import ProfilePage from './routes/profilePage/ProfilePage'
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
       {
         path: "/:id",
         element: <SinglePage/>
+      },
+      {
+        path: "/profile",
+        element: <ProfilePage/>
       }
     ]
     }
